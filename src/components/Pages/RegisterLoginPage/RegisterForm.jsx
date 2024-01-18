@@ -43,8 +43,9 @@ const RegisterForm = () => {
   };
 
   return (
-    <div className="col-md-5 border-start p-5 border-custom-registerLogin">
+    <div className="col-md-5 p-5 d-flex align-items-center justify-content-center vh-100 border-custom-registerLogin">
       <form className="pl-3 row g-3" onSubmit={handleSubmit}>
+        <h2 className="text-center mb-4 text-white">Sign up</h2>
         <div className="col-md-6">
           <label className="form-label text-white">Nombre *</label>
           <input
@@ -63,7 +64,6 @@ const RegisterForm = () => {
             className="form-control custom-input"
             name="apellidos"
             placeholder='Apellidos'
-            value={datosPersonales.apellidos}
             onChange={handleChangeDatosPersonales}
           />
         </div>
@@ -167,7 +167,7 @@ const RegisterForm = () => {
           />
         </div>
         <div className="col-12">
-          <button type="submit" className="btn color-button-registerLogin"><strong>Sign in</strong></button>
+          <button type="submit" className="btn color-button-registerLogin"><strong>Sign up</strong></button>
         </div>
       </form>
     </div>
