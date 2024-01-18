@@ -1,0 +1,33 @@
+/* Estilos CSS */
+.custom-bg-color {
+    background-color: #010f1a;
+}
+
+.with-shadow {
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.5);
+}
+
+.custom-input {
+    border-radius: 8px;
+    background-color: transparent;
+    border: 1px solid #74c87a;
+    color: #495057;
+}
+
+.custom-input::placeholder {
+    color: #a5a5a5;
+}
+
+.border-custom-registerLogin {
+    border-color: #74c87a !important;
+}
+
+.color-button-registerLogin {
+    background-color: #74c87a;
+    color: #010f1a;
+}
+
+.color-button-registerLogin:hover {
+    background-color: #57955b;
+    color: #010f1a;
+}
