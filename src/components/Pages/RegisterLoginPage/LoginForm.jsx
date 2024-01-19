@@ -16,7 +16,7 @@ const LoginForm = () => {
                     <input type="password" className="form-control custom-input" id="password" placeholder="Ingresa tu contraseña" />
                 </div>
                 <div className='col-md-7'>
-                    <button type="submit" className="btn color-button-registerLogin"><strong>Sign in</strong></button>
+                    <button type="submit" className="btn color-button-general"><strong>Sign in</strong></button>
                 </div>
             </form>
         </div>

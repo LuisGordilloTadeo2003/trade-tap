@@ -167,7 +167,7 @@ const RegisterForm = () => {
           />
         </div>
         <div className="col-12">
-          <button type="submit" className="btn color-button-registerLogin"><strong>Sign up</strong></button>
+          <button type="submit" className="btn color-button-general"><strong>Sign up</strong></button>
         </div>
       </form>
     </div>

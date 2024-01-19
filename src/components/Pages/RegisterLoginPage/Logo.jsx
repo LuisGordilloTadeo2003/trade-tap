@@ -8,7 +8,7 @@ const Logo = () => {
             <img src={LogoTradeTap}
                 alt="Logo"
                 className="img-fluid"
-                style={{ maxWidth: '600px', maxHeight: '600px' }}>
+                style={{ maxWidth: '400px', maxHeight: '400px' }}>
             </img>
         </div>
     );

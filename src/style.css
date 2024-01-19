@@ -24,12 +24,32 @@
     border-left: 2px solid #74c87a !important;
 }
 
-.color-button-registerLogin {
+.color-button-general {
     background-color: #74c87a !important;
     color: #010f1a !important;
 }
 
-.color-button-registerLogin:hover {
+.color-button-general:hover {
     background-color: #57955b !important;
     color: #010f1a !important;
+}
+
+/* ESTILOS SCROLLBAR */
+::-webkit-scrollbar {
+    width: 10px;
+    /* Altura del scrollbar horizontal */
+}
+
+/* Estilo del "track" del scrollbar (el fondo del scrollbar) */
+::-webkit-scrollbar-track {
+    background-color: #010f1a;
+    /* Cambia el color de fondo del "track" */
+}
+
+/* Estilo del "thumb" del scrollbar (la parte móvil del scrollbar) */
+::-webkit-scrollbar-thumb {
+    background-color: #74c87a;
+    /* Cambia el color del "thumb" */
+    border-radius: 8px;
+    /* Añade bordes redondeados al "thumb" */
 }
