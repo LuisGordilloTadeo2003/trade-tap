@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import RegisterForm from "../RegisterLoginPage/RegisterForm"
 import LoginForm from "../RegisterLoginPage/LoginForm"
 import Logo from "../RegisterLoginPage/Logo"
