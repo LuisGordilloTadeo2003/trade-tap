@@ -1,7 +1,6 @@
 import React from "react";
 import CarouselElement from "./CarouselElement";
 import InfoTable from "./InfoTable";
-import { Row } from "react-bootstrap";
 import LeftColumn from "./LeftColumn";
 import RightColumn from "./RightColumn";
 

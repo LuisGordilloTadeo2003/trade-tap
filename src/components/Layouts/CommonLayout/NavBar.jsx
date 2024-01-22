@@ -5,15 +5,19 @@ const NavBar = () => {
     return (
         <div className="row p-3 custom-bg-color border-bottom border-color">
             <div className="col-2 px-4">
-                <img src="/logoTradeTap.jpg"
-                    alt="Logo"
-                    className="img-fluid"
-                    style={{ maxWidth: '60px', maxHeight: '60px' }}
-                />
+                <NavLink>
+                    <img src="/logoTradeTap.jpg"
+                        alt="Logo"
+                        className="img-fluid"
+                        style={{ maxWidth: '60px', maxHeight: '60px' }}
+                    /></NavLink>
+
             </div>
 
             <div className="col-6">
-
+                <NavLink className="btn btn-outline-primary" to="/">Inicio</NavLink>
+                <NavLink className="btn btn-outline-primary" to="/contacto">Contacto</NavLink>
+                <NavLink className="btn btn-outline-primary" to="/blog">Blog</NavLink>
             </div>
 
             <div className="col-4 d-flex justify-content-end align-items-center">

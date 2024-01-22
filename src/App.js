@@ -8,11 +8,13 @@ function App() {
   return (
     <div className="App custom-bg-color ">
       <InfoPageLayout />
-      {/*  
+      { /* 
       <Routes>
         <Route element={<RegisterLoginLayout />} path='/login'></Route>
+        <Route element={<InfoPageLayout />} path='/'></Route>
       </Routes>
       */}
+
     </div>
   );
 }
