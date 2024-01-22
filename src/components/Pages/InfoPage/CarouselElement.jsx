@@ -9,7 +9,7 @@ const CarouselElement = () => {
                     <img
                         src="/image1.jpg"
                         alt="Primer slide"
-                        style={{ width: "100vw", height: "40vh" }}
+                        style={{ width: "100vw", height: "50vh" }}
                     />
                     <Carousel.Caption>
                         <h3>Primer slide</h3>
@@ -20,7 +20,7 @@ const CarouselElement = () => {
                     <img
                         src="/image2.jpg"
                         alt="Segundo slide"
-                        style={{ width: "100vw", height: "40vh" }}
+                        style={{ width: "100vw", height: "50vh" }}
                     />
                     <Carousel.Caption>
                         <h3>Segundo slide</h3>

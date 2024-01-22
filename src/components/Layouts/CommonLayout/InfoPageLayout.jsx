@@ -5,7 +5,7 @@ import Footer from "../CommonLayout/Footer";
 
 const InfoPageLayout = () => {
     return (
-        <div className="justify-content-center align-items-center custom-bg-color text-white">
+        <div className="justify-content-center align-items-center text-white">
             <div className="row mb-4">
                 <NavBar />
             </div>

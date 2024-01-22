@@ -8,7 +8,7 @@ import RightColumn from "./RightColumn";
 const InfoPage = () => {
     return (
         <div className="row d-flex justify-content-center">
-            <div className="col-8">
+            <div className="col-9">
                 <CarouselElement />
             </div>
             <div className="row mt-4">

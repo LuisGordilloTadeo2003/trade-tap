@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
     return (
-        <div className="row p-3 custom-bg-color">
+        <div className="row p-3 custom-bg-color border-bottom border-color">
             <div className="col-2 px-4">
                 <img src="/logoTradeTap.jpg"
                     alt="Logo"

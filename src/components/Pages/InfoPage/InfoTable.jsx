@@ -3,7 +3,7 @@ import WorkerInfoTable from "./WorkerInfoTable";
 
 const InfoTable = () => {
     return (
-        <div className="col-md-6 d-flex justify-content-center">
+        <div className="col-md-6 d-flex justify-content-center border-start border-end border-color">
             <table>
                 <thead>
                     <tr>
