@@ -8,7 +8,7 @@ const ProfessionsList = () => {
         "carpintero",
         "programador",
         "fontanero",
-        "butanero",
+        "crupier",
         "dj",
     ]
 
@@ -16,11 +16,15 @@ const ProfessionsList = () => {
         <table>
             {
                 profesiones.map((profesion) => {
+                    let icono = `/Iconos/Icono-${profesion}.png`;
+
+                    console.log(icono);
+
                     return (
                         <td>
-                            <tr style={{ maxWidth: "20px", maxHeight: "20px" }}>
-                                <td style={{ backgroundColor: "white", borderRadius: "50%" }}>
-                                    I
+                            <tr>
+                                <td className="d-flex justify-content-center" style={{ backgroundColor: "white" }}>
+                                    <img style={{ maxWidth: "40px", maxHeight: "40px" }} src={icono} alt="" srcset="" />
                                 </td>
                             </tr>
                             <tr>
