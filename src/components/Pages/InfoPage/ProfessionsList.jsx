@@ -10,6 +10,10 @@ const ProfessionsList = () => {
         "fontanero",
         "crupier",
         "dj",
+        "cocinero",
+        "jamonero",
+        "soldador",
+        "mecanico"
     ]
 
     return (
@@ -23,12 +27,12 @@ const ProfessionsList = () => {
                     return (
                         <td>
                             <tr>
-                                <td className="d-flex justify-content-center" style={{ backgroundColor: "white" }}>
-                                    <img style={{ maxWidth: "40px", maxHeight: "40px" }} src={icono} alt="" srcset="" />
+                                <td className="d-flex justify-content-center">
+                                    <img style={{ maxWidth: "35px", maxHeight: "35px" }} src={icono} alt="" srcset="" />
                                 </td>
                             </tr>
                             <tr>
-                                <td className="p-3">
+                                <td className="px-4 pt-1">
                                     <Profession key={profesion} profesion={profesion} />
                                 </td>
                             </tr>

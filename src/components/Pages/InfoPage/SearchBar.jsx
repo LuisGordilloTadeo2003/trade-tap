@@ -2,9 +2,16 @@ import React from "react";
 
 const SearchBar = () => {
     return (
-        <>
-            <input type="text" name="Search" id="search" placeholder="Busca un trabajador o una profesión"></input>
-        </>
+        <div className="row div-search-bar">
+            <div className="col-11">
+                <input
+                    className="search-bar"
+                    type="text" name="Search" id="search" placeholder="¿Que quieres solucionar hoy?">
+                </input>
+            </div>
+            <div className="col-1">
+            </div>
+        </div>
     );
 }
 
