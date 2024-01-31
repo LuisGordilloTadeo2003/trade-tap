@@ -1,4 +1,5 @@
 import React from "react";
+import Workers from "./Workers.jsx"
 
 const WorkerInfoTable = () => {
     const workers = [];
@@ -34,11 +35,7 @@ const WorkerInfoTable = () => {
                     return (
                         <tr key={worker.id}>
                             <td>
-                                <div className="row d-flex align-items-end border-bottom border-dark">
-                                    <p className="m-0 col-6"><strong>{worker.nombre + " " + worker.apellido1 + " " + worker.apellido2}</strong></p>
-                                    <p className="m-0 col-6 small">{worker.profesion}</p>
-                                    <p className="m-0 small">{generarEstrellas(worker.valoracion)}</p>
-                                </div>
+                                <Workers worker={worker} generarEstrellas={generarEstrellas} />
                             </td>
                         </tr>
                     )

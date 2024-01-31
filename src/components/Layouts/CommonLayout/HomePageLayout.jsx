@@ -1,7 +1,7 @@
 import React from "react";
-import InfoPage from "../../Pages/InfoPage/InfoPage";
-import NavBar from "../CommonLayout/NavBar";
-import Footer from "../CommonLayout/Footer";
+import InfoPage from "../../Pages/HomePage/HomePage";
+import NavBar from "./NavBar";
+import Footer from "./Footer";
 
 const InfoPageLayout = () => {
     return (

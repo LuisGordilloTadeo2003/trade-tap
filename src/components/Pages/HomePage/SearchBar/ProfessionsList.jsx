@@ -1,5 +1,6 @@
 import React from "react";
 import Profession from "./Profession";
+import ProfessionIcon from "./ProfessionIcon";
 
 const ProfessionsList = () => {
     let profesiones = [
@@ -25,18 +26,13 @@ const ProfessionsList = () => {
                     console.log(icono);
 
                     return (
-                        <td>
-                            <tr>
-                                <td className="d-flex justify-content-center">
-                                    <img style={{ maxWidth: "35px", maxHeight: "35px" }} src={icono} alt="" srcset="" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td className="px-4 pt-1">
-                                    <Profession key={profesion} profesion={profesion} />
-                                </td>
-                            </tr>
+                        <td style={{ minWidth: "100px", textAlign: "center" }}>
+                            <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                                <ProfessionIcon key={profesion} icono={icono} />
+                                <Profession key={profesion} profesion={profesion} />
+                            </div>
                         </td>
+
                     )
                 })
             }

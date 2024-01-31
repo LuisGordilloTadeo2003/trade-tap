@@ -1,13 +1,13 @@
 import './App.css';
 import RegisterLoginLayout from './components/Layouts/CommonLayout/RegisterLoginLayout';
-import InfoPageLayout from './components/Layouts/CommonLayout/InfoPageLayout'
+import HomePageLayout from './components/Layouts/CommonLayout/HomePageLayout'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App custom-bg-color ">
-      <InfoPageLayout />
+      <HomePageLayout />
       { /* 
       <Routes>
         <Route element={<RegisterLoginLayout />} path='/login'></Route>
