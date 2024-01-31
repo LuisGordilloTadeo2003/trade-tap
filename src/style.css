@@ -20,6 +20,10 @@
     box-shadow: 0 0 0 0.2rem rgba(116, 200, 122, 0.5) !important;
 }
 
+.text-register {
+    font-size: 13px;
+}
+
 .border-custom-registerLogin {
     border-left: 2px solid #74c87a !important;
 }

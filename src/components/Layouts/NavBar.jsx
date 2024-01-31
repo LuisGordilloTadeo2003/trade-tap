@@ -17,11 +17,13 @@ const NavBar = () => {
 
             <div className="col-4 d-flex justify-content-end align-items-center">
                 <button className="btn mx-3 color-button-general"
-                    style={{ minWidth: '100px' }}>
+                    style={{ minWidth: '100px' }}
+                    href="/login">
                     <strong>Sign In</strong>
                 </button>
                 <button className="btn mx-3 color-button-general"
-                    style={{ minWidth: '100px' }}>
+                    style={{ minWidth: '100px' }}
+                    href="/register">
                     <strong>Sign Up</strong>
                 </button>
             </div>

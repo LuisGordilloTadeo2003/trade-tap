@@ -1,5 +1,5 @@
 import React from "react";
-import InfoPage from "../../Pages/HomePage/HomePage";
+import InfoPage from "../Pages/HomePage/HomePage";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 

@@ -166,6 +166,9 @@ const RegisterForm = () => {
             onChange={handleChangeDatosCuenta}
           />
         </div>
+        <div className='col-md-7 m-0'>
+          <a className="text-register" href="/login">Ya tengo una cuenta</a>
+        </div>
         <div className="col-12">
           <button type="submit" className="btn color-button-general"><strong>Sign up</strong></button>
         </div>

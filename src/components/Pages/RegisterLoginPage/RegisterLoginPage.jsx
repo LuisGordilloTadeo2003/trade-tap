@@ -5,11 +5,21 @@ import Logo from "../RegisterLoginPage/Logo"
 import "../../../style.css"
 
 const RegisterLoginPage = () => {
+    const path = window.location.pathname;
+
+    console.log(path)
+
     return (
         <div className="container-fluid custom-bg-color">
             <div className="row align-items-center">
                 <Logo />
-                <RegisterForm />
+                {
+                    path === "/login"
+                        ? <LoginForm />
+                        : path === "/register"
+                            ? <RegisterForm />
+                            : null
+                }
             </div>
         </div>
     );
