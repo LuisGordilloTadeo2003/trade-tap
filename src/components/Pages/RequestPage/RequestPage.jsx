@@ -2,7 +2,7 @@ import React from "react";
 import ElementCard from "../../ElementCard";
 
 const RequestPage = () => {
-    let array = [
+    let data = [
         {
             title: '2 sillas',
             name: 'Luis',
@@ -23,7 +23,7 @@ const RequestPage = () => {
     return (
         <div>
             <h1>Request Page</h1>
-            <ElementCard array={array} />
+            <ElementCard data={data} />
         </div>
     );
 }

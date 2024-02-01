@@ -1,10 +1,10 @@
 import React from "react";
 
-const ElementCard = ({ array }) => {
+const ElementCard = ({ data }) => {
     return (
         <div>
             {
-                array.map((item, index) =>
+                data.map((item, index) =>
                     <div key={index} className="row d-flex mx-5 my-3" style={{ border: "2px solid #74c87a", borderRadius: "20px" }}>
                         <div className="col-1 d-flex align-items-center justify-content-center">
                             <img style={{ maxWidth: "100px", maxHeight: "100px" }} src="/Profile.png" alt="" />
