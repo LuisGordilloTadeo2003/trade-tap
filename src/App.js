@@ -2,34 +2,34 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../src/style.css"
 
-import NavBar from "./NavBar";
-import HomePage from "../Pages/HomePage/HomePage";
-import RegisterLoginPage from "../Pages/RegisterLoginPage/RegisterLoginPage";
-import RequestPage from "../Pages/RequestPage/RequestPage";
-import ReservesPage from "../Pages/ReservesPage/ReservesPage";
-import ProfilePage from "../Pages/ProfilePage/ProfilePage";
-import Footer from "./Footer";
+import NavBar from "./components/NavBar";
+import HomePage from "./components/Pages/HomePage/HomePage";
+import RegisterLoginPage from "./components/Pages/RegisterLoginPage/RegisterLoginPage";
+import RequestPage from "./components/Pages/RequestPage/RequestPage";
+import ReservesPage from "./components/Pages/ReservesPage/ReservesPage";
+import ProfilePage from "./components/Pages/ProfilePage/ProfilePage";
+import Footer from "./components/Footer";
 
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
   /*
-  Componenetes Reutilizables:
-    ElementCard:
+  -Componenetes Reutilizables:
+    +ElementCard:
       WorkerResult
       Request
       Reserve
       Commission
       Service
-  NavBar:
+  -NavBar:
     RegisteredBtn
     ProfileBtn
-  MainContent:
-    LoginRegisterPage:
+  -MainContent:
+    +LoginRegisterPage:
       LoginForm
       RegisterForm
       Logo
-    HomePage:
+    +HomePage:
       SearchBar
       ProfessionList:
         ProfessionIcon
@@ -38,14 +38,14 @@ function App() {
         WorkerRanking
       SixWorkers:
         SixWorkersCard
-    SearchPage:
+    +SearchPage:
       SearchBar
       ResultList:
         Worker
-    ProposalPage:
+    +ProposalPage:
       Proposal
       PendingProposals
-    RequestPage:
+    +RequestPage:
       Request:
         Information
         Btn:
@@ -53,17 +53,17 @@ function App() {
           Show
       ApprovedRequests
       PendingRequests
-    ReservesPage
-    CommissionPage
-    ServicePage
-    ProfilePage:
+    +ReservesPage
+    +CommissionPage
+    +ServicePage
+    +ProfilePage:
       Information [Picture - Name - Direction]
       ProfilePublication
       Profile:
         ProfileWorker
         ProfileClient
       ProfileRequest
-  Footer
+  -Footer
   */
   return (
     <div className="App custom-bg-color ">

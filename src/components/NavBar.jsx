@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
     return (
@@ -16,16 +16,18 @@ const NavBar = () => {
             </div>
 
             <div className="col-4 d-flex justify-content-end align-items-center">
-                <button className="btn mx-3 color-button-general"
-                    style={{ minWidth: '100px' }}
-                    href="/login">
-                    <strong>Sign In</strong>
-                </button>
-                <button className="btn mx-3 color-button-general"
-                    style={{ minWidth: '100px' }}
-                    href="/register">
-                    <strong>Sign Up</strong>
-                </button>
+                <Link to="/login">
+                    <button className="btn mx-3 color-button-general"
+                        style={{ minWidth: '100px' }}>
+                        <strong>Sign In</strong>
+                    </button>
+                </Link>
+                <Link to="/register">
+                    <button className="btn mx-3 color-button-general"
+                        style={{ minWidth: '100px' }}>
+                        <strong>Sign Up</strong>
+                    </button>
+                </Link>
             </div>
         </div>
     );

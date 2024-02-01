@@ -4,7 +4,7 @@ import SixWorkers from "./SixWorkers";
 import SearchBar from "./SearchBar";
 import ProfessionsList from "./ProfessionsList";
 
-const InfoPage = () => {
+const HomePage = () => {
     return (
         <div className="row d-flex justify-content-center">
             <SearchBar />
@@ -19,4 +19,4 @@ const InfoPage = () => {
     );
 }
 
-export default InfoPage;
+export default HomePage;

@@ -1,5 +1,5 @@
 import React from "react";
-import WorkerInfoTable from "./WorkersRankingTable";
+import WorkersRankingTable from "./WorkersRankingTable";
 
 const RankingTable = () => {
     return (
@@ -11,7 +11,7 @@ const RankingTable = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    <WorkerInfoTable />
+                    <WorkersRankingTable />
                 </tbody>
             </table>
         </div>
