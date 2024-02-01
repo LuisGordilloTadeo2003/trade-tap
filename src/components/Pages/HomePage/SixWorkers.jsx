@@ -1,5 +1,5 @@
 import React from "react";
-import Worker from "./Worker";
+import SixWorkerCard from "./SixWorkerCard";
 
 const SixWorkers = () => {
     let workers = [];
@@ -21,28 +21,11 @@ const SixWorkers = () => {
         <div className="col-8 d-flex justify-content-end">
             {
                 workers.map(worker => {
-                    return <Worker key={worker.id} worker={worker} />
+                    return <SixWorkerCard key={worker.id} worker={worker} />
                 })
             }
         </div>
     );
-
-    /*
-        return (
-            <div className="col-8 d-flex justify-content-end">
-                <div className="row">
-                    <Worker />
-                    <Worker />
-                    <Worker />
-                </div>
-                <div className="row">
-                    <Worker />
-                    <Worker />
-                    <Worker />
-                </div>
-            </div>
-        );
-        */
 }
 
 export default SixWorkers;

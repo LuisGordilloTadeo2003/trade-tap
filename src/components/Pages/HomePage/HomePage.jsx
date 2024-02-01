@@ -1,8 +1,8 @@
 import React from "react";
-import InfoTable from "./Table/InfoTable";
-import SixWorkers from "./SixWorkers/SixWorkers";
-import SearchBar from "./SearchBar/SearchBar";
-import ProfessionsList from "./SearchBar/ProfessionsList";
+import RankingTable from "./RankingTable";
+import SixWorkers from "./SixWorkers";
+import SearchBar from "./SearchBar";
+import ProfessionsList from "./ProfessionsList";
 
 const InfoPage = () => {
     return (
@@ -12,7 +12,7 @@ const InfoPage = () => {
                 <ProfessionsList />
             </div>
             <div className="row mt-4">
-                <InfoTable />
+                <RankingTable />
                 <SixWorkers />
             </div>
         </div>

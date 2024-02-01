@@ -1,10 +1,10 @@
 import React from "react";
 
-const RequestPage = () => {
+const ProfilePage = () => {
     return (
         <>
         </>
     );
 }
 
-export default RequestPage;
+export default ProfilePage;

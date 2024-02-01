@@ -43,7 +43,7 @@ const RegisterForm = () => {
   };
 
   return (
-    <div className="col-md-5 p-5 d-flex align-items-center justify-content-center vh-100 border-custom-registerLogin">
+    <div className="col-md-5 p-5 d-flex align-items-center justify-content-center border-custom-registerLogin">
       <form className="pl-3 row g-3" onSubmit={handleSubmit}>
         <h2 className="text-center mb-4 text-white">Sign up</h2>
         <div className="col-md-6">

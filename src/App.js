@@ -1,24 +1,57 @@
 import './App.css';
-import RegisterLoginPage from './components/Pages/RegisterLoginPage/RegisterLoginPage';
-import HomePageLayout from './components/Layouts/HomePageLayout';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "../src/style.css"
+
+import NavBar from "./NavBar";
+import HomePage from "../Pages/HomePage/HomePage";
+import RegisterLoginPage from "../Pages/RegisterLoginPage/RegisterLoginPage";
+import RequestPage from "../Pages/RequestPage/RequestPage";
+import ReservesPage from "../Pages/ReservesPage/ReservesPage";
+import ProfilePage from "../Pages/ProfilePage/ProfilePage";
+import Footer from "./Footer";
+
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
   /*
+  Componenetes Reutilizables:
+    ElementCard:
+      WorkerResult
+      Request
+      Reserve
+      Commission
+      Service
   NavBar:
     RegisteredBtn
     ProfileBtn
   MainContent:
     LoginRegisterPage:
-      Login
-      Register
-    HomePage
+      LoginForm
+      RegisterForm
+      Logo
+    HomePage:
+      SearchBar
+      ProfessionList:
+        ProfessionIcon
+        ProffesionName
+      RankingTable:
+        WorkerRanking
+      SixWorkers:
+        SixWorkersCard
+    SearchPage:
+      SearchBar
+      ResultList:
+        Worker
     ProposalPage:
-      Proposals
+      Proposal
       PendingProposals
     RequestPage:
-      Requests
+      Request:
+        Information
+        Btn:
+          AcceptOrReject
+          Show
+      ApprovedRequests
       PendingRequests
     ReservesPage
     CommissionPage
@@ -34,12 +67,25 @@ function App() {
   */
   return (
     <div className="App custom-bg-color ">
-      <Routes>
-        <Route element={<RegisterLoginPage />} path='/login'></Route>
-        <Route element={<RegisterLoginPage />} path='/register'></Route>
-        <Route element={<HomePageLayout />} path='/'></Route>
-      </Routes>
-
+      <div className="justify-content-center align-items-center text-white">
+        <div className="row mb-4">
+          <NavBar />
+        </div>
+        <div className="row">
+          <Routes>
+            <Route element={<HomePage />} path="/"></Route>
+            <Route element={<RegisterLoginPage />} path="/login"></Route>
+            <Route element={<RegisterLoginPage />} path="/register"></Route>
+            <Route element={<RequestPage />} path="/request"></Route>
+            <Route element={<ReservesPage />} path="/reserves"></Route>
+            <Route element={<ProfilePage />} path="/profile/worker"></Route>
+            <Route element={<ProfilePage />} path="/profile/client"></Route>
+          </Routes>
+        </div>
+        <div className="row mt-4">
+          <Footer />
+        </div>
+      </div>
     </div>
   );
 }

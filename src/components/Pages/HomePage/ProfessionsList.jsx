@@ -1,5 +1,5 @@
 import React from "react";
-import Profession from "./Profession";
+import ProfessionName from "./ProfessionName";
 import ProfessionIcon from "./ProfessionIcon";
 
 const ProfessionsList = () => {
@@ -29,7 +29,7 @@ const ProfessionsList = () => {
                         <td style={{ minWidth: "100px", textAlign: "center" }}>
                             <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                                 <ProfessionIcon key={profesion} icono={icono} />
-                                <Profession key={profesion} profesion={profesion} />
+                                <ProfessionName key={profesion} profesion={profesion} />
                             </div>
                         </td>
 

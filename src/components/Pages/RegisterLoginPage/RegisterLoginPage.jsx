@@ -2,7 +2,6 @@ import React from "react";
 import RegisterForm from "../RegisterLoginPage/RegisterForm"
 import LoginForm from "../RegisterLoginPage/LoginForm"
 import Logo from "../RegisterLoginPage/Logo"
-import "../../../style.css"
 
 const RegisterLoginPage = () => {
     const path = window.location.pathname;

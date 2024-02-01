@@ -1,7 +1,7 @@
 import React from "react";
-import Workers from "./Workers.jsx"
+import RankingWorker from "./RankingWorker.jsx"
 
-const WorkerInfoTable = () => {
+const WorkersRankingTable = () => {
     const workers = [];
 
     for (let i = 0; i < 10; i++) {
@@ -35,7 +35,7 @@ const WorkerInfoTable = () => {
                     return (
                         <tr key={worker.id}>
                             <td>
-                                <Workers worker={worker} generarEstrellas={generarEstrellas} />
+                                <RankingWorker worker={worker} generarEstrellas={generarEstrellas} />
                             </td>
                         </tr>
                     )
@@ -45,4 +45,4 @@ const WorkerInfoTable = () => {
     );
 }
 
-export default WorkerInfoTable;
+export default WorkersRankingTable;

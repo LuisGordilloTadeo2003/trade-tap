@@ -1,6 +1,6 @@
 import React from "react";
 
-const Workers = (props) => {
+const RankingWorker = (props) => {
     return (
         <div className="row d-flex align-items-end border-bottom border-dark">
             <p className="m-0 col-6"><strong>{props.worker.nombre + " " + props.worker.apellido1 + " " + props.worker.apellido2}</strong></p>
@@ -10,4 +10,4 @@ const Workers = (props) => {
     );
 }
 
-export default Workers;
+export default RankingWorker;

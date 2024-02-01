@@ -1,7 +1,7 @@
 import React from "react";
-import WorkerInfoTable from "./WorkerInfoTable";
+import WorkerInfoTable from "./WorkersRankingTable";
 
-const InfoTable = () => {
+const RankingTable = () => {
     return (
         <div className="col-md-4 d-flex justify-content-start border-start border-end border-color">
             <table>
@@ -18,4 +18,4 @@ const InfoTable = () => {
     );
 }
 
-export default InfoTable;
+export default RankingTable;

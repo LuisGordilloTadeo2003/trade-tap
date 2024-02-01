@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const LoginForm = () => {
     return (
-        <div className="col-md-5 p-5 d-flex align-items-center justify-content-center vh-100 border-custom-registerLogin">
+        <div className="col-md-5 p-5 d-flex align-items-center justify-content-center border-custom-registerLogin">
             <form className='pl-3 row g-3 justify-content-center'>
                 <h2 className="text-center mb-4 text-white">Sign in</h2>
                 <div className="col-md-7">

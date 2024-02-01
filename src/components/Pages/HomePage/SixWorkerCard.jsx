@@ -1,6 +1,6 @@
 import React from "react";
 
-const Worker = (props) => {
+const SixWorkerCard = (props) => {
     return (
         <div className="col-3">
             <div className="foto-worker">
@@ -16,4 +16,4 @@ const Worker = (props) => {
     );
 }
 
-export default Worker;
+export default SixWorkerCard;
