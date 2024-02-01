@@ -3,14 +3,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "../src/style.css"
 
 import NavBar from "./components/NavBar";
-import HomePage from "./components/Pages/HomePage/HomePage";
-import RegisterLoginPage from "./components/Pages/RegisterLoginPage/RegisterLoginPage";
-import RequestPage from "./components/Pages/RequestPage/RequestPage";
-import ReservesPage from "./components/Pages/ReservesPage/ReservesPage";
-import ProfilePage from "./components/Pages/ProfilePage/ProfilePage";
 import Footer from "./components/Footer";
 
 import { Routes, Route } from 'react-router-dom';
+import MainContent from './components/MainContent';
+import RegisterLoginPage from './components/Pages/RegisterLoginPage/RegisterLoginPage';
 
 function App() {
   /*
@@ -65,26 +62,38 @@ function App() {
       ProfileRequest
   -Footer
   */
+
+  let path = window.location.pathname;
+
   return (
     <div className="App custom-bg-color ">
       <div className="justify-content-center align-items-center text-white">
-        <div className="row mb-4">
-          <NavBar />
-        </div>
-        <div className="row">
-          <Routes>
-            <Route element={<HomePage />} path="/"></Route>
-            <Route element={<RegisterLoginPage />} path="/login"></Route>
-            <Route element={<RegisterLoginPage />} path="/register"></Route>
-            <Route element={<RequestPage />} path="/request"></Route>
-            <Route element={<ReservesPage />} path="/reserves"></Route>
-            <Route element={<ProfilePage />} path="/profile/worker"></Route>
-            <Route element={<ProfilePage />} path="/profile/client"></Route>
-          </Routes>
-        </div>
-        <div className="row mt-4">
-          <Footer />
-        </div>
+        <Routes>
+          <Route element={<RegisterLoginPage />} path="/login"></Route>
+          <Route element={<RegisterLoginPage />} path="/register"></Route>
+        </Routes>
+
+        {
+          (path === "/login" || path === "/register") ? (
+            <RegisterLoginPage />
+          ) : (
+            <>
+              <div className="row mb-4">
+                <NavBar />
+              </div>
+              <div className="row">
+                <MainContent />
+              </div>
+              <div className="row mt-4">
+                <Footer />
+              </div>
+            </>
+          )
+        }
+
+
+
+
       </div>
     </div>
   );
